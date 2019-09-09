@@ -11,6 +11,22 @@ public class ParseStarterActivity extends Application {
         super.onCreate();
 
         Parse.setLogLevel(Parse.LOG_LEVEL_DEBUG);
+        
+        
+      /*  Parse.initialize(new Parse.Configuration.Builder(this)
+                .applicationId("")
+                .clientKey("")
+                .server("")
+                .build()
+        );*/
+
+      //AWS Connection :
+        Parse.initialize(new Parse.Configuration.Builder(this)
+                .applicationId("")
+                .clientKey("")
+                .server("")
+                .build()
+        );
 
     }
 }
